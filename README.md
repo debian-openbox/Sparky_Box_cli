@@ -1,8 +1,8 @@
 ## **Sparky_Box** (instructions in Serbian)
 ### *Sparky Linux sa OpenBox WM*
 
-1. Potrebno je prvo skinuti sa sajta https://sparkylinux.org/download/rolling/ ISO instalacioni fajl:
-    * MinimalGUI https://distrowatch.com/dwres/torrents/sparkylinux-2021.03-x86_64-minimalgui.iso.torrent  
+1. Potrebno je prvo skinuti sa sajta https://sparkylinux.org/download/stable/ ISO instalacioni fajl:
+    * MinimalGUI https://distrowatch.com/dwres/torrents/sparkylinux-6.0-x86_64-minimalgui.iso.torrent  
 
 1. Pomoću Rufusa ili Etchera napraviti butabilni instalacioni USB Flash 
 1. Instalirati na odabranu particiju
