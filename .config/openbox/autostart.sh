@@ -9,7 +9,6 @@ fbpanel &
 fi
 xscreensaver -nosplash &
 (sleep 5; pnmixer) &
-thunar --daemon &
 if [ -f /opt/sparky/nm-applet-reload ]; then
 /opt/sparky/nm-applet-reload &
 fi
