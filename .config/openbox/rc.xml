@@ -347,10 +347,13 @@
         <command>xfce4-screenshooter</command>
       </action>
     </keybind>
-    <!-- Launch monitor settings  -->
     <keybind key="W-l">
       <action name="Execute">
-        <command>lxrandr</command>
+        <startupnotify>
+          <enabled>false</enabled>
+          <name>Lock screen</name>
+        </startupnotify>
+        <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
     <!-- Launch terminal emulator  -->
