@@ -336,9 +336,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>false</enabled>
-          <name>htop</name>
+          <name>lxtask</name>
         </startupnotify>
-        <command>x-terminal-emulator -T 'htop task manager' -e htop</command>
+        <command>lxtask</command>
       </action>
     </keybind>   
     <!-- Launch screenshot when Print is pressed -->
