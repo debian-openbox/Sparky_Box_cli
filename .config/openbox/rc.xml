@@ -326,13 +326,17 @@
       <action name="Execute">
         <command>geany</command>
       </action>
-    </keybind>
-    <!--<keybind key="C-m">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
+    </keybind>      
+    <keybind key="W-Escape">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>false</enabled>
+          <name>xkill</name>
+        </startupnotify>
+        <command>xkill</command>
       </action>
-    </keybind>-->
-     <keybind key="W-h">
+    </keybind>
+    <keybind key="W-h">
       <action name="Execute">
         <startupnotify>
           <enabled>false</enabled>
