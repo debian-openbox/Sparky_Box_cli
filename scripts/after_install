@@ -53,18 +53,15 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 ## podesavanje QT tema na GTK baziranom sistemu:
 ------------------------------------------------
    sudo apt-get install qt5-style-plugins
-   Za QT 5 aplikacije:
+ 1.Za QT 5 aplikacije:
    sudo su root
    sudo echo "QT_QPA_PLATFORMTHEME=gtk2" >> /etc/environment
    exit
+ 2. lxappearance (menu --> Settings --> Customize Look and Feel)
+    Widget --> Arc-Dark
+    Icon Theme --> Oxygen
+ 3. LogOut --> LogIn
 ------------------------------------------------------------
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-------------------------------------------------------------
-## Open as SUDO - PCManFM
--------------------------
-   Go to Preferences → Advanced and set "Switch user command" to:
-   lxsudo dbus-run-session -- %s
---------------------------------------------------------------
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
---------------------------------------------------------------
+
 
