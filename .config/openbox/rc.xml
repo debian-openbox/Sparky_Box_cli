@@ -366,7 +366,7 @@
         <command>x-terminal-emulator</command>
       </action>
     </keybind>
-    <keybind key="W-q">
+    <keybind key="W-x">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
