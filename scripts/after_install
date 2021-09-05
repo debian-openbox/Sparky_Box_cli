@@ -47,9 +47,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
    sudo nano /etc/fstab         
    brisemo liniju /swapfile swap swap defaults 0 0 
    sudo rm /swapfile
------------------------------------------------------------------------------
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
------------------------------------------------------------------------------
+--------------------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+--------------------------------------------------
 ## podesavanje QT tema na GTK baziranom sistemu:
 ------------------------------------------------
    sudo apt-get install qt5-style-plugins
@@ -63,11 +63,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  3. LogOut --> LogIn
 ------------------------------------------------------------
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
------------------------------------------------------------------------------
-## GOOGLE DRIVE download velikih fajlova:
+------------------------------------------------------------
+## GOOGLE DRIVE download velikih fajlova (primer podesavanje Firefox-esr):
 -----------------------------------------
 1.source ~/.bash_aliases
 2.sudo rm -rf ~/.mozilla/*
+### file na GD-u podesiti da bude dostupan svima sa linkom/ kao na primer:
 ### https://drive.google.com/file/d/2mW1sIvTVbcgtOrWOeoJExl91fZjrr13P/view?usp=sharing
 3.cd ~/Documents
 4.gdrive_download 2mW1sIvTVbcgtOrWOeoJExl91fZjrr13P mozillapodesavanje.zip
@@ -75,5 +76,15 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 6.sudo chmod -R 755 .mozilla && sudo chown -R 1000:1000 .mozilla
 7.cp -r .mozilla/* ~/.mozilla/
 8.sudo rm -rf .mozilla mozillapodesavanje.zip
----------------------------------------------------------------------------------------
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+---------------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+---------------------------------------------
+## Podesavanje fontova:
+-----------------------
+ # Reconfigure fontconfig
+ sudo dpkg-reconfigure fontconfig-config
+
+ # Regenerate fonts cache
+ sudo dpkg-reconfigure fontconfig
+ -------------------------------------------
+ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
