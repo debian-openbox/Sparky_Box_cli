@@ -22,7 +22,7 @@ echo "urxvtd -q &" >> ~/.config/openbox/autostart.sh
 
 sudo apt-get update
 
-sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode nmap net-tools libglu1-mesa fbxkb mpv mlocate vlc apt-file xutils mesa-utils dnsutils xfburn simplescreenrecorder htop apt-rdepends compton compton-conf firefox-esr xsel numlockx sysstat acpi hardinfo hddtemp gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xsettingsd git wmctrl arc-theme qt5-style-plugins oxygen-icon-theme psmisc flameshot package-update-indicator sparky-aptus-upgrade-checker && sudo apt install -y ttf-mscorefonts-installer qbittorrent pcmanfm-qt --no-install-recommends
+sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode nmap net-tools libglu1-mesa fbxkb mpv mlocate vlc apt-file xutils mesa-utils dnsutils xfburn simplescreenrecorder htop apt-rdepends compton compton-conf firefox-esr xsel numlockx sysstat acpi hardinfo hddtemp gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xsettingsd git wmctrl arc-theme qt5-style-plugins oxygen-icon-theme psmisc flameshot zip unzip package-update-indicator sparky-aptus-upgrade-checker && sudo apt install -y ttf-mscorefonts-installer qbittorrent pcmanfm-qt --no-install-recommends
 
 mkdir ~/.config/
 
