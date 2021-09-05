@@ -40,6 +40,8 @@ cp -Rp ~/Sparky_Box/.config/jgmenu/prepend.csv ~/.config/jgmenu/
 
 cp -p ~/Sparky_Box/.Xresources ~/
 
+cp -p ~/Sparky_Box/.bash_aliases ~/
+
 cp -p ~/Sparky_Box/keyboard.sh ~/
 
 sudo cp -p ~/Sparky_Box/rs.png /usr/share/fbxkb/images/rs.png
