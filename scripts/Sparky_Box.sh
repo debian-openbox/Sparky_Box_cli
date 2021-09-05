@@ -168,7 +168,7 @@ xdg-mime default pcmanfm-qt.desktop inode/directory
 
 #sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
-sudo sed -i 's!dirs=/opt/artwork!dirs=/opt/artwork;/usr/share/backgrounds;!' ~/.config/nitrogen/nitrogen.cfg
+sudo sed -i 's!dirs=/opt/artwork;!dirs=/opt/artwork;/usr/share/backgrounds;!' ~/.config/nitrogen/nitrogen.cfg
 echo "" >> ~/.config/nitrogen/bg-saved.cfg
 echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
 echo "file=/usr/share/backgrounds/wallpapers-pixabay/secret-3120483_1920.jpg" >> ~/.config/nitrogen/bg-saved.cfg
