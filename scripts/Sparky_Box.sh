@@ -168,6 +168,13 @@ xdg-mime default pcmanfm-qt.desktop inode/directory
 
 #sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
+sudo sed -i 's!dirs=/opt/artwork!dirs=/opt/artwork;/usr/share/backgrounds;!' ~/.config/nitrogen/nitrogen.cfg
+echo "" >> ~/.config/nitrogen/bg-saved.cfg
+echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
+echo "file=/usr/share/backgrounds/wallpapers-pixabay/secret-3120483_1920.jpg" >> ~/.config/nitrogen/bg-saved.cfg
+echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
+echo "bgcolor=#000000" >> ~/.config/nitrogen/bg-saved.cfg
+
 mkdir -p ~/.urxvt/ext
 cp -p ~/Sparky_Box/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
