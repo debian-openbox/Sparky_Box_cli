@@ -1,12 +1,9 @@
 #! /bin/bash
 
 sparky-polkit &
-nitrogen --restore && \
-if [ -f /usr/bin/tint2 ]; then
+nitrogen --restore &
 tint2 &
-elif [ -f /usr/bin/fbpanel ]; then
-fbpanel &
-fi
+
 xscreensaver -nosplash &
 (sleep 5; pnmixer) &
 if [ -f /opt/sparky/nm-applet-reload ]; then
