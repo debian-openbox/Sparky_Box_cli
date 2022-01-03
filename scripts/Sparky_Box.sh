@@ -12,13 +12,13 @@ sudo chown -R $(logname):$(logname) /home/$(logname)/
 find ~/Sparky_Box -type d -exec chmod 755 {} \;
 find ~/Sparky_Box -type f -exec chmod 755 {} \;
 
-echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/openbox/autostart.sh
-echo "package-update-indicator &" >> ~/.config/openbox/autostart.sh
-echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/openbox/autostart.sh
-echo "numlockx on &" >> ~/.config/openbox/autostart.sh
-echo "~/keyboard.sh" >> ~/.config/openbox/autostart.sh
-echo "fbxkb &" >> ~/.config/openbox/autostart.sh
-echo "urxvtd -q &" >> ~/.config/openbox/autostart.sh
+#echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/openbox/autostart.sh
+#echo "package-update-indicator &" >> ~/.config/openbox/autostart.sh
+#echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/openbox/autostart.sh
+#echo "numlockx on &" >> ~/.config/openbox/autostart.sh
+#echo "~/keyboard.sh" >> ~/.config/openbox/autostart.sh
+#echo "fbxkb &" >> ~/.config/openbox/autostart.sh
+#echo "urxvtd -q &" >> ~/.config/openbox/autostart.sh
 
 sudo apt-get update
 
