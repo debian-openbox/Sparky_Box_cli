@@ -9,8 +9,8 @@ mkdir ~/.scripts
 sudo chmod -R 755 ~/.scripts
 
 sudo chown -R $(logname):$(logname) /home/$(logname)/
-find ~/Sparky_Box -type d -exec chmod 755 {} \;
-find ~/Sparky_Box -type f -exec chmod 755 {} \;
+find ~/Sparky_Box_cli -type d -exec chmod 755 {} \;
+find ~/Sparky_Box_cli -type f -exec chmod 755 {} \;
 
 #echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/openbox/autostart.sh
 #echo "package-update-indicator &" >> ~/.config/openbox/autostart.sh
@@ -26,27 +26,27 @@ sudo apt install -y  xorg lightdm openbox obconf tint2 lxappearance jgmenu xscre
 
 mkdir ~/.config/
 
-cp -Rp ~/Sparky_Box/.config/geany ~/.config
-cp -Rp ~/Sparky_Box/.config/mpv ~/.config
-cp -Rp ~/Sparky_Box/.config/tint2 ~/.config
-cp -Rp ~/Sparky_Box/.config/compton.conf ~/.config
-cp -Rp ~/Sparky_Box/.config/openbox/* ~/.config/openbox/
+cp -Rp ~/Sparky_Box_cli/.config/geany ~/.config
+cp -Rp ~/Sparky_Box_cli/.config/mpv ~/.config
+cp -Rp ~/Sparky_Box_cli/.config/tint2 ~/.config
+cp -Rp ~/Sparky_Box_cli/.config/compton.conf ~/.config
+cp -Rp ~/Sparky_Box_cli/.config/openbox/* ~/.config/openbox/
 mkdir ~/.config/terminator
-cp -Rp ~/Sparky_Box/.config/terminator/config ~/.config/terminator/
+cp -Rp ~/Sparky_Box_cli/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
-cp -Rp ~/Sparky_Box/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
+cp -Rp ~/Sparky_Box_cli/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
 mkdir ~/.config/jgmenu
-cp -Rp ~/Sparky_Box/.config/jgmenu/prepend.csv ~/.config/jgmenu/
+cp -Rp ~/Sparky_Box_cli/.config/jgmenu/prepend.csv ~/.config/jgmenu/
 
-cp -p ~/Sparky_Box/.Xresources ~/
+cp -p ~/Sparky_Box_cli/.Xresources ~/
 
-cp -p ~/Sparky_Box/.bash_aliases ~/
+cp -p ~/Sparky_Box_cli/.bash_aliases ~/
 
-cp -p ~/Sparky_Box/keyboard.sh ~/
+cp -p ~/Sparky_Box_cli/keyboard.sh ~/
 
-sudo cp -p ~/Sparky_Box/rs.png /usr/share/fbxkb/images/rs.png
+sudo cp -p ~/Sparky_Box_cli/rs.png /usr/share/fbxkb/images/rs.png
 
-sudo cp ~/Sparky_Box/ncmpcpp_48x48.png /usr/share/icons
+sudo cp ~/Sparky_Box_cli/ncmpcpp_48x48.png /usr/share/icons
 
 #sudo chmod 777 /usr/share/icons/ncmpcpp_48x48.png
 
@@ -64,37 +64,37 @@ sudo cp ~/Sparky_Box/ncmpcpp_48x48.png /usr/share/icons
 #sudo chmod 777 ~/keyboard.sh
 
 ## debinfo -- prikaz resursa pri otvaranju terminala
-sudo cp ~/Sparky_Box/scripts/debinfo /usr/bin
+sudo cp ~/Sparky_Box_cli/scripts/debinfo /usr/bin
 sudo chmod 777 /usr/bin/debinfo
 echo debinfo >> ~/.bashrc
 
 ## instalacija comptona
-cp ~/Sparky_Box/scripts/install_compton.sh ~/.scripts
+cp ~/Sparky_Box_cli/scripts/install_compton.sh ~/.scripts
 mkdir ~/bin
-cp ~/Sparky_Box/start-compton.sh ~/bin
+cp ~/Sparky_Box_cli/start-compton.sh ~/bin
 sudo chmod -R 755 ~/bin
 
 ## instalacija ncmpcpp
-cp -Rp ~/Sparky_Box/.ncmpcpp ~/
-cp -Rp ~/Sparky_Box/.mpd ~/
+cp -Rp ~/Sparky_Box_cli/.ncmpcpp ~/
+cp -Rp ~/Sparky_Box_cli/.mpd ~/
 echo "Exec=x-terminal-emulator -T 'ncmpcpp' -e ncmpcpp" > /tmp/ncmpcpp_replacement
 sudo sed -i "s/^.*Exec=ncmpcpp.*$/$(cat /tmp/ncmpcpp_replacement)/" /usr/share/applications/ncmpcpp.desktop
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ncmpcpp.desktop
 sudo echo "Icon=/usr/share/icons/ncmpcpp_48x48.png" >> /usr/share/applications/ncmpcpp.desktop
 
 ## screeny
-cp -p ~/Sparky_Box/scripts/screeny ~/.scripts
+cp -p ~/Sparky_Box_cli/scripts/screeny ~/.scripts
 
 ## script for reinstall youtube-dl
-cp -p ~/Sparky_Box/scripts/reinstall_youtube-dl.sh ~/.scripts
+cp -p ~/Sparky_Box_cli/scripts/reinstall_youtube-dl.sh ~/.scripts
 
 ## Geany theme settings
-# cp -p ~/Sparky_Box/scripts/settings_geany ~/.scripts
+# cp -p ~/Sparky_Box_cli/scripts/settings_geany ~/.scripts
 # cd ~/.scripts
 # sudo ./settings_geany
 
 ## obmenu-generator
-cp -p ~/Sparky_Box/scripts/obmenu-generator.sh ~/.scripts
+cp -p ~/Sparky_Box_cli/scripts/obmenu-generator.sh ~/.scripts
 
 # mkdir ~/projects
 # cd ~/projects
@@ -109,15 +109,15 @@ cp -p ~/Sparky_Box/scripts/obmenu-generator.sh ~/.scripts
 # cd ~/projects/debian-openbox/10_openbox_numix-paper-icons
 # sudo ./install.sh
 
-cd /home/$(logname)/Sparky_Box/scripts && sudo ./wps-office.sh
+cd /home/$(logname)/Sparky_Box_cli/scripts && sudo ./wps-office.sh
 cd /home/$(logname)/Reports
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
-cd /home/$(logname)/Sparky_Box/scripts/
+cd /home/$(logname)/Sparky_Box_cli/scripts/
 sudo ./install_missing_wps_fonts.sh
 
 # dt-dark-theme
-cp -pR /home/$(logname)/Sparky_Box/.themes /home/$(logname)/
+cp -pR /home/$(logname)/Sparky_Box_cli/.themes /home/$(logname)/
 
 
 # cd ~/projects/debian-openbox/10_openbox_conky
@@ -134,8 +134,8 @@ cp -pR /home/$(logname)/Sparky_Box/.themes /home/$(logname)/
 # sudo ./install.sh
 
 # Copy wallpapers folderes
-sudo cp -r ~/Sparky_Box/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
-sudo cp -r ~/Sparky_Box/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
+sudo cp -r ~/Sparky_Box_cli/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
+sudo cp -r ~/Sparky_Box_cli/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
 
 # sudo sed -i 's!wallpapers-pack1!wallpapers-pixabay!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/install.sh
 # sudo sed -i 's!bl-colorful-aptenodytes-forsteri-by-nixiepro.png!bridge-2936500_1920.jpg!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/install.sh
@@ -145,7 +145,7 @@ sudo cp -r ~/Sparky_Box/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
 # cd ~/projects/debian-openbox/15_openbox_wallpaper-packs
 # sudo ./install.sh
 
-sudo cp ~/Sparky_Box/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
+sudo cp ~/Sparky_Box_cli/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
 sudo chmod 777 /usr/share/images/desktop-base/lightdm_login.jpg
 sudo sed -i 's!#background=!background=/usr/share/images/desktop-base/lightdm_login.jpg!' /etc/lightdm/lightdm-gtk-greeter.conf
 
@@ -176,17 +176,17 @@ echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
 echo "bgcolor=#000000" >> ~/.config/nitrogen/bg-saved.cfg
 
 mkdir -p ~/.urxvt/ext
-cp -p ~/Sparky_Box/ext/* ~/.urxvt/ext/
+cp -p ~/Sparky_Box_cli/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
 sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 
 # replace thunar with pcmanfm-qt
 # sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openbox/autostart.sh
 
-cd ~/Sparky_Box/scripts/openbox_conky
+cd ~/Sparky_Box_cli/scripts/openbox_conky
 sudo ./install.sh
 
-cd ~/Sparky_Box/scripts/install_vim/
+cd ~/Sparky_Box_cli/scripts/install_vim/
 sudo ./install.sh
 
 #sudo chown -R $(logname):$(logname) /home/$(logname)/
