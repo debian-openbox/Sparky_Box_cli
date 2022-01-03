@@ -30,7 +30,7 @@ cp -Rp ~/Sparky_Box/.config/geany ~/.config
 cp -Rp ~/Sparky_Box/.config/mpv ~/.config
 cp -Rp ~/Sparky_Box/.config/tint2 ~/.config
 cp -Rp ~/Sparky_Box/.config/compton.conf ~/.config
-cp -Rp ~/Sparky_Box/.config/openbox/rc.xml ~/.config/openbox/
+cp -Rp ~/Sparky_Box/.config/openbox/* ~/.config/openbox/
 mkdir ~/.config/terminator
 cp -Rp ~/Sparky_Box/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
