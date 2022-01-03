@@ -22,7 +22,7 @@ find ~/Sparky_Box_cli -type f -exec chmod 755 {} \;
 
 sudo apt-get update
 
-sudo apt install -y  xorg lightdm openbox obconf tint2 lxappearance menu xscreensaver mpd ncmpcpp geany terminator rxvt-unicode nmap net-tools libglu1-mesa fbxkb mpv mlocate vlc apt-file xutils mesa-utils dnsutils xfburn simplescreenrecorder htop apt-rdepends compton compton-conf firefox-esr xsel numlockx sysstat acpi hardinfo hddtemp gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xsettingsd git wmctrl arc-theme qt5-style-plugins oxygen-icon-theme psmisc flameshot zip unzip xfce4-power-manager package-update-indicator sparky-aptus-upgrade-checker && sudo apt install -y ttf-mscorefonts-installer qbittorrent pcmanfm-qt --no-install-recommends
+sudo apt install -y  xorg lightdm openbox obconf tint2 lxappearance menu xscreensaver mpd ncmpcpp geany terminator rxvt-unicode nmap net-tools libglu1-mesa fbxkb mpv mlocate vlc apt-file xutils mesa-utils dnsutils xfburn simplescreenrecorder htop apt-rdepends compton compton-conf firefox-esr xsel numlockx sysstat acpi hardinfo hddtemp gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xsettingsd git wmctrl arc-theme qt5-style-plugins oxygen-icon-theme psmisc flameshot zip unzip nitrogen xfce4-power-manager package-update-indicator sparky-aptus-upgrade-checker && sudo apt install -y ttf-mscorefonts-installer qbittorrent pcmanfm-qt --no-install-recommends
 
 mkdir ~/.config/
 
